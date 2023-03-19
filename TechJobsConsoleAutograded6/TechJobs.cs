@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TechJobsConsoleAutograded6
 {
@@ -135,7 +136,25 @@ namespace TechJobsConsoleAutograded6
         // TODO: complete the PrintJobs method.
         public void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
+            if(someJobs.Count == 0)
+            {
+                Console.WriteLine("No result");
+            }
+            else
+            {
+                foreach (Dictionary<string, string> list in someJobs)
+                {
+                    Console.WriteLine(Environment.NewLine + "*****");
+                    //Console.WriteLine(Environment.NewLine);
+                    foreach (KeyValuePair<string, string> kvp in list)
+                    {
+                        Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                    }
+                    Console.WriteLine("*****" + Environment.NewLine);
+                    //Console.WriteLine(Environment.NewLine);
+                }
+            }
+            //Console.WriteLine("PrintJobs is not implemented yet");
         }
     }
 }
