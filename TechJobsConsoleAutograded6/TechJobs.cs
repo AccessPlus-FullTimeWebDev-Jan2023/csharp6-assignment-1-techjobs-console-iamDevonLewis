@@ -140,7 +140,7 @@ namespace TechJobsConsoleAutograded6
         {
             if(someJobs.Count == 0)
             {
-                Console.WriteLine("No result");
+                Console.WriteLine("No results");
             }
             else
             {
@@ -152,7 +152,7 @@ namespace TechJobsConsoleAutograded6
                     {
                         Console.WriteLine($"{kvp.Key}: {kvp.Value}");
                     }
-                    Console.WriteLine("*****" + Environment.NewLine);
+                    Console.WriteLine("*****");
                     //Console.WriteLine(Environment.NewLine);
                 }
             }
