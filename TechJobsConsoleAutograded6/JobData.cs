@@ -54,6 +54,10 @@ namespace TechJobsConsoleAutograded6
                 {
                     if (kvp.Value.ToLower().Contains(value.ToLower()))
                     {
+                        if (jobs.Contains(row))
+                        {
+                            continue;
+                        }
                         jobs.Add(row);
                     }
                 }
